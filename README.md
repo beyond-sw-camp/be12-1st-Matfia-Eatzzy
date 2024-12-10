@@ -3,7 +3,7 @@
 <h1 align="center">🍽️ Eatzzy </h1>
 
 <div align="center">
-  <img src="logo.png" alt="eatzzy logo" style="zoom: 30%" align="center" />
+  <img src="logo.png" alt="eatzzy logo" width="400" height="400" align="center" />
 </div>
 
 <h3 align="center">3팀 - Team Matfia </h3>
