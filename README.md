@@ -160,3 +160,81 @@
 </details>
 
 ## SQL 성능 개선
+
+
+기존 sql은 인기 있는 가게의 정보를 빼오기 위해서는 다섯개의 테이블을 JOIN 해야했다.   
+하지만 그랬을 때 성능적인 부분에서 결함이 많았고 해당 정보를 빠르게 받아오기 위해 테이블을 하나 추가해 정보를 저장했다. 
+
+<details>
+<summary>수정 전 쿼리</summary>
+
+```sql
+SELECT stores.idx, store_images.image_path, stores.name, stores_category.name,
+        ROUND(AVG(store_reviews.star_point), 1) AS average_star_point, 
+        COUNT(store_reviews.idx) AS count_reviews,
+        stores.opening_hours, COUNT(likes.idx) AS count_likes
+  FROM stores
+  JOIN stores_category ON stores_category.idx = stores.category_id
+  JOIN store_images ON store_images.store_id = stores.idx
+  JOIN store_reviews ON store_reviews.store_id = stores.idx
+  JOIN likes ON stores.idx = likes.store_id
+  GROUP BY stores.idx
+  ORDER BY count_likes DESC
+  LIMIT 10;
+  ```
+</details>
+
+
+<details>
+<summary>수정 후 쿼리</summary>
+
+```sql 
+SELECT 
+    store_id,
+    image_path,
+    store_name,
+    category_name,
+    average_star_point,
+    count_reviews,
+    count_likes,
+    opening_hours
+FROM stores_summary
+ORDER BY count_likes DESC
+LIMIT 10;
+```
+</details>
+
+<details>
+<summary>새로 도입한 테이블</summary>  
+
+
+```sql 
+CREATE TABLE stores_summary (
+    store_id INT PRIMARY KEY,
+    image_path VARCHAR(255),
+    store_name VARCHAR(255),
+    category_name VARCHAR(255),
+    average_star_point DECIMAL(3, 1),
+    count_reviews INT,
+    count_likes INT,
+    opening_hours VARCHAR(255)
+);
+```
+</details>  
+
+
+수정 전 CPU 사용량
+
+<img src="sql_modify/수정전.png" width="500" align="center" />
+
+수정 후 CPU 사용량  
+
+<img src="sql_modify/수정후.png" width="500" align="center" />
+
+수정 전 작동 시간  
+
+<img src="sql_modify/수정전_1.png" width="500" align="center" />
+
+수정 후 작동 시간  
+
+<img src="sql_modify/수정후_1.png" width="500" align="center" />
