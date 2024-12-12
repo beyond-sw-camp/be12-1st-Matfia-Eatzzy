@@ -127,6 +127,18 @@
 <summary>상품 카테고리 등록</summary>
 <img src="sql/상품/상품 카테고리 등록.png" alt="식당검색" width="500" align="center" />
 
+<summary>상품 리뷰 수정</summary>
+<img src="sql/상품/상품리뷰수정.png" alt="식당검색" width="500" align="center" />
+
+<summary>상품 리뷰 수정</summary>
+<img src="sql/상품/상품리뷰수정2.png" alt="식당검색" width="500" align="center" />
+
+<summary>상품 리뷰 삭제</summary>
+<img src="sql/상품/상품리뷰삭제.png" alt="식당검색" width="500" align="center" />
+
+<summary>상품 바로 구매 </summary>
+<img src="sql/상품/상품바로구매.png" alt="식당검색" width="500" align="center" />
+
 <details>
 <summary>장바구니</summary>
 
@@ -134,6 +146,10 @@
 <img src="sql/상품/장바구니 담기.png" alt="식당검색" width="500" align="center" />
 <summary>장바구니 조회</summary>
 <img src="sql/상품/장바구니 조회.png" alt="식당검색" width="500" align="center" />
+
+<summary>장바구니 물품 주문</summary>
+<img src="sql/상품/장바구니물품주문.png" alt="식당검색" width="500" align="center" />
+
 </details>
 
 </details>
@@ -153,6 +169,12 @@
 
 <details>
 <summary>배송</summary>
+
+<summary>배송 등록</summary>
+<img src="sql/배송/배송등록.png" alt="식당검색" width="500" align="center" />
+<summary>배송 조회</summary>
+<img src="sql/배송/배송조회.png" alt="식당검색" width="500" align="center" />
+
 </details>
 
 <details>
@@ -161,16 +183,15 @@
 
 ## SQL 성능 개선
 
-
-기존 sql은 인기 있는 가게의 정보를 빼오기 위해서는 다섯개의 테이블을 JOIN 해야했다.   
-하지만 그랬을 때 성능적인 부분에서 결함이 많았고 해당 정보를 빠르게 받아오기 위해 테이블을 하나 추가해 정보를 저장했다. 
+기존 sql은 인기 있는 가게의 정보를 빼오기 위해서는 다섯개의 테이블을 JOIN 해야했다.  
+하지만 그랬을 때 성능적인 부분에서 결함이 많았고 해당 정보를 빠르게 받아오기 위해 테이블을 하나 추가해 정보를 저장했다.
 
 <details>
 <summary>수정 전 쿼리</summary>
 
 ```sql
 SELECT stores.idx, store_images.image_path, stores.name, stores_category.name,
-        ROUND(AVG(store_reviews.star_point), 1) AS average_star_point, 
+        ROUND(AVG(store_reviews.star_point), 1) AS average_star_point,
         COUNT(store_reviews.idx) AS count_reviews,
         stores.opening_hours, COUNT(likes.idx) AS count_likes
   FROM stores
@@ -181,15 +202,15 @@ SELECT stores.idx, store_images.image_path, stores.name, stores_category.name,
   GROUP BY stores.idx
   ORDER BY count_likes DESC
   LIMIT 10;
-  ```
-</details>
+```
 
+</details>
 
 <details>
 <summary>수정 후 쿼리</summary>
 
-```sql 
-SELECT 
+```sql
+SELECT
     store_id,
     image_path,
     store_name,
@@ -202,13 +223,13 @@ FROM stores_summary
 ORDER BY count_likes DESC
 LIMIT 10;
 ```
+
 </details>
 
 <details>
-<summary>새로 도입한 테이블</summary>  
+<summary>새로 도입한 테이블</summary>
 
-
-```sql 
+```sql
 CREATE TABLE stores_summary (
     store_id INT PRIMARY KEY,
     image_path VARCHAR(255),
@@ -220,21 +241,21 @@ CREATE TABLE stores_summary (
     opening_hours VARCHAR(255)
 );
 ```
-</details>  
 
+</details>
 
 수정 전 CPU 사용량
 
 <img src="sql_modify/수정전.png" width="500" align="center" />
 
-수정 후 CPU 사용량  
+수정 후 CPU 사용량
 
 <img src="sql_modify/수정후.png" width="500" align="center" />
 
-수정 전 작동 시간  
+수정 전 작동 시간
 
 <img src="sql_modify/수정전_1.png" width="500" align="center" />
 
-수정 후 작동 시간  
+수정 후 작동 시간
 
 <img src="sql_modify/수정후_1.png" width="500" align="center" />
