@@ -169,13 +169,12 @@
   회원가입  
 
   로그인 성공  
-  <img src="sql/사용자/로그인 성공.png" alt="로그인 성공" 
-  width="500" align="center" />
+  <img src="sql/사용자/로그인 성공.png" alt="로그인 성공" width="700" align="center" />
   
   <br>
 
   로그인 실패  
-  <img src="sql/사용자/로그인 실패.png" alt="로그인 실패" width="500" align="center" />
+  <img src="sql/사용자/로그인 실패.png" alt="로그인 실패" width="700" align="center" />
 
   <br>
   
@@ -190,63 +189,65 @@
   <div markdown="1">
 
   식당 전체 조회 (좋아요순 정렬)  
-  <img src="sql/식당/식당 전체 조회_좋아요순 정렬.png" alt="식당 전체 조회" width="500" align="center" />
+  <img src="sql/식당/식당 전체 조회_좋아요순 정렬.png" alt="식당 전체 조회" width="700" align="center" />
 
   <br>
 
   식당 상세 조회  
-  <img src="sql/식당/식당 상세 조회.webp" alt="식당 상세 조회" width="500" align="center" />
-  <img src="sql/식당/식당 메뉴 조회.png" alt="식당 메뉴 조회" width="500" align="center" />
+  <img src="sql/식당/식당 상세 조회.webp" alt="식당 상세 조회" width="700" align="center" />
+  
+  식당 메뉴 조회  
+  <img src="sql/식당/식당 메뉴 조회.png" alt="식당 메뉴 조회" width="700" align="center" />
 
   <br>
 
   식당 검색  
-  <img src="sql/식당/검색어 조회.png" alt="식당검색" width="500" align="center" />
+  <img src="sql/식당/검색어 조회.png" alt="식당검색" width="700" align="center" />
 
   <br>
     
   카테고리 기준 필터링  
-  <img src="sql/식당/식당 카테고리 기준 필터링.png" alt="식당 카테고리 필터링" width="500" align="center" />
+  <img src="sql/식당/식당 카테고리 기준 필터링.png" alt="식당 카테고리 필터링" width="700" align="center" />
 
   <br>
   
   지역 기준 필터링  
-  <img src="sql/식당/식당 지역 기준 필터링.png" alt="식당 지역 필터링" width="500" align="center" />
+  <img src="sql/식당/식당 지역 기준 필터링.png" alt="식당 지역 필터링" width="700" align="center" />
 
   <br>
 
   고객이 좋아요 한 식당 조회  
-  <img src="sql/식당/내가 좋아요한 식당 조회.png" alt="고객이 좋아요 한 식당 조회" width="500" align="center" />
+  <img src="sql/식당/내가 좋아요한 식당 조회.png" alt="고객이 좋아요 한 식당 조회" width="700" align="center" />
 
   <br>
   
   점주 식당 등록  
-  <img src="sql/식당/점주 식당 등록.png" alt="점주 식당 등록" width="500" align="center" />
+  <img src="sql/식당/점주 식당 등록.png" alt="점주 식당 등록" width="700" align="center" />
 
   <br>
 
   점주 식당 예약 조회  
-  <img src="sql/식당/점주 식당예약 조회.png" alt="점주 식당 예약 조회" width="500" align="center" />
+  <img src="sql/식당/점주 식당예약 조회.png" alt="점주 식당 예약 조회" width="700" align="center" />
 
   <br>
 
-  - 점주의 식당 조회  
-  <img src="sql/식당/점주의 식당 조회.png" alt="점주 식당 조회" width="500" align="center" />
+  점주의 식당 조회  
+  <img src="sql/식당/점주의 식당 조회.png" alt="점주 식당 조회" width="700" align="center" />
 
   <br>
 
   식당 등록 요청 거절  
-  <img src="sql/식당/식당등록거절.png" alt="식당 등록 요청 거절" width="500" align="center" />
+  <img src="sql/식당/식당등록거절.png" alt="식당 등록 요청 거절" width="700" align="center" />
 
   <br>
 
   식당 등록 요청 수락  
-  <img src="sql/식당/식당등록수락.png" alt="식당 등록 요청 수락" width="500" align="center" />
+  <img src="sql/식당/식당등록수락.png" alt="식당 등록 요청 수락" width="700" align="center" />
 
   <br>
 
   식당 카테고리 등록  
-  <img src="sql/식당/식당카테고리등록.png" alt="식당 카테고리 등록" width="500" align="center" />
+  <img src="sql/식당/식당카테고리등록.png" alt="식당 카테고리 등록" width="700" align="center" />
 
   <br>
   </div>
@@ -259,43 +260,43 @@
   <div markdown="1">
 
   전체 상품 조회  
-  <img src="sql/상품/모든 상품 조회.png" alt="전체 상품 조회" width="500" align="center" />
+  <img src="sql/상품/모든 상품 조회.png" alt="전체 상품 조회" width="700" align="center" />
 
   <br>
 
   상품 상세 조회  
-  <img src="sql/상품/상품 상세확인.png" alt="상품 상세 조회" width="500" align="center" />
+  <img src="sql/상품/상품 상세확인.png" alt="상품 상세 조회" width="700" align="center" />
 
   <br>
 
   상품 리뷰 확인  
-  <img src="sql/상품/상품 리뷰 확인.png" alt="상품 리뷰 확인" width="500" align="center" />
+  <img src="sql/상품/상품 리뷰 확인.png" alt="상품 리뷰 확인" width="700"  />
 
   <br>
 
   상품 리뷰 등록  
-  <img src="sql/상품/상품 리뷰 등록.png" alt="상품 리뷰 등록" width="500" align="center" />
+  <img src="sql/상품/상품 리뷰 등록.png" alt="상품 리뷰 등록" width="700"  />
 
   <br>
 
   상품 리뷰 수정  
-  <img src="sql/상품/상품리뷰수정.png" alt="상품 리뷰 수정 " width="500" align="center" />
+  <img src="sql/상품/상품리뷰수정.png" alt="상품 리뷰 수정" width="700" />
   
 
   <br>
 
   상품 리뷰 삭제  
-  <img src="sql/상품/상품리뷰삭제.png" alt="상품 리뷰 삭제" width="500" align="center" />
+  <img src="sql/상품/상품리뷰삭제.png" alt="상품 리뷰 삭제" width="700" />
 
   <br>
 
   상품 바로 구매  
-  <img src="sql/상품/상품바로구매.png" alt="상품 바로 구매" width="500" align="center" />
+  <img src="sql/상품/상품바로구매.png" alt="상품 바로 구매" width="700" />
 
   <br>
 
   상품 카테고리 등록  
-  <img src="sql/상품/상품 카테고리 등록.png" alt="상품 카테고리 등록" width="500" align="center" />
+  <img src="sql/상품/상품 카테고리 등록.png" alt="상품 카테고리 등록" width="700"  />
 
   <br>
 
@@ -309,17 +310,17 @@
   <div markdown="1">
 
   장바구니 담기  
-  <img src="sql/상품/장바구니 담기.png" alt="장바구니 담기" width="500" align="center" />
+  <img src="sql/상품/장바구니 담기.png" alt="장바구니 담기" width="700" />
   
   <br>
 
   장바구니 조회  
-  <img src="sql/상품/장바구니 조회.png" alt="장바구니 조회" width="500" align="center" />
+  <img src="sql/상품/장바구니 조회.png" alt="장바구니 조회" width="700" />
 
   <br>
 
   장바구니 물품 주문  
-  <img src="sql/상품/장바구니물품주문.png" alt="장바구니 물품 주문" width="500" align="center" />
+  <img src="sql/상품/장바구니물품주문.png" alt="장바구니 물품 주문" width="700" align="center" />
   
   <br>
 
@@ -332,17 +333,17 @@
   <summary><b>주문</b></summary>
 
   전체 주문 내역 조회  
-  <img src="sql/주문/전체 주문 내역 조회.png" alt="전체 주문 내역 조회" width="500" align="center" />
+  <img src="sql/주문/전체 주문 내역 조회.png" alt="전체 주문 내역 조회" width="700" align="center" />
 
   <br>
 
   주문 상세 내역 조회  
-  <img src="sql/주문/주문 상세 내역 조회.png" alt="주문 상세 내역 조회" width="500" align="center" />
+  <img src="sql/주문/주문 상세 내역 조회.png" alt="주문 상세 내역 조회" width="700" align="center" />
 
   <br>
   
   주문 현황 확인  
-  <img src="sql/주문/주문현황확인.png" alt="주문 현황 확인" width="500" align="center" />
+  <img src="sql/주문/주문현황확인.png" alt="주문 현황 확인" width="700" align="center" />
   
   <br>
   </div>
@@ -355,12 +356,12 @@
   <div markdown="1">
 
   배송 등록  
-  <img src="sql/배송/배송등록.png" alt="배송 등록" width="500" align="center" />
+  <img src="sql/배송/배송등록.png" alt="배송 등록" width="700" align="center" />
 
   <br>
-
+  
   배송 조회  
-  <img src="sql/배송/배송조회.png" alt="배송 조회" width="500" align="center" />
+  <img src="sql/배송/배송조회.png" alt="배송 조회" width="700" align="center" />
 
   <br>
   </div>
@@ -373,12 +374,12 @@
   <div markdown="1">
 
   결제 수단 선택  
-  <img src="sql/결제/결제 수단 선택.webp" alt="결제 수단 선택" width="500" align="center" />
+  <img src="sql/결제/결제 수단 선택.webp" alt="결제 수단 선택" width="700" align="center" />
 
   <br>
 
   카드 등록  
-  <img src="sql/결제/카드 등록.webp" alt="카드 등록" width="500" align="center" />
+  <img src="sql/결제/카드 등록.webp" alt="카드 등록" width="700" align="center" />
 
   <br>
 
@@ -460,19 +461,19 @@
 <br>
 
 #### ✅ 수정 전 CPU 사용량
-<img src="sql_modify/수정전.png" width="500" align="center" />
+<img src="sql_modify/수정전.png" width="700" align="center" />
 
 <br>
 
 #### ✅ 수정 후 CPU 사용량
-<img src="sql_modify/수정후.png" width="500" align="center" />
+<img src="sql_modify/수정후.png" width="700" align="center" />
 
 <br>
 
 #### ✅ 수정 전 작동 시간
-<img src="sql_modify/수정전_1.png" width="500" align="center" />
+<img src="sql_modify/수정전_1.png" width="700" align="center" />
 
 <br>
 
 #### ✅ 수정 후 작동 시간
-<img src="sql_modify/수정후_1.png" width="500" align="center" />
+<img src="sql_modify/수정후_1.png" width="700" align="center" />
