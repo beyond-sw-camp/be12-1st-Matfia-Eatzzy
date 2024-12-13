@@ -187,6 +187,7 @@
 
   식당 상세 조회  
   <img src="sql/식당/식당 상세 조회.webp" alt="식당 상세 조회" width="500" align="center" />
+  <img src="sql/식당/식당 메뉴 조회.png" alt="식당 상세 조회" width="500" align="center" />
 
   <br>
 
