@@ -196,7 +196,7 @@
 
   식당 상세 조회  
   <img src="sql/식당/식당 상세 조회.webp" alt="식당 상세 조회" width="500" align="center" />
-  <img src="sql/식당/식당 메뉴 조회.png" alt="식당 상세 조회" width="500" align="center" />
+  <img src="sql/식당/식당 메뉴 조회.png" alt="식당 메뉴 조회" width="500" align="center" />
 
   <br>
 
@@ -226,7 +226,7 @@
   <br>
 
   점주 식당 예약 조회  
-  <img src="sql/식당/점주 식당예약 조회.png" alt="점주 식당 예약 조회회" width="500" align="center" />
+  <img src="sql/식당/점주 식당예약 조회.png" alt="점주 식당 예약 조회" width="500" align="center" />
 
   <br>
 
@@ -241,12 +241,12 @@
   <br>
 
   식당 등록 요청 수락  
-  <img src="sql/식당/식당등록수락.png" alt="식당 등록 요청 수락락" width="500" align="center" />
+  <img src="sql/식당/식당등록수락.png" alt="식당 등록 요청 수락" width="500" align="center" />
 
   <br>
 
   식당 카테고리 등록  
-  <img src="sql/식당/식당카테고리등록.png" alt="식당 카테고리 등록록" width="500" align="center" />
+  <img src="sql/식당/식당카테고리등록.png" alt="식당 카테고리 등록" width="500" align="center" />
 
   <br>
   </div>
@@ -259,17 +259,17 @@
   <div markdown="1">
 
   전체 상품 조회  
-  <img src="sql/상품/상품리뷰확인.png" alt="전체 상품 조회" width="500" align="center" />
+  <img src="sql/상품/모든 상품 조회.png" alt="전체 상품 조회" width="500" align="center" />
 
   <br>
 
   상품 상세 조회  
-  <img src="sql/상품/상품리뷰확인.png" alt="상품 상세 조회" width="500" align="center" />
+  <img src="sql/상품/상품 상세확인.png" alt="상품 상세 조회" width="500" align="center" />
 
   <br>
 
   상품 리뷰 확인  
-  <img src="sql/상품/상품리뷰확인.png" alt="상품 리뷰 확인인" width="500" align="center" />
+  <img src="sql/상품/상품 리뷰 확인.png" alt="상품 리뷰 확인" width="500" align="center" />
 
   <br>
 
@@ -305,7 +305,7 @@
 <br>
 
 <details>
-  <summary><b>장바구니<b></summary>
+  <summary><b>장바구니</b></summary>
   <div markdown="1">
 
   장바구니 담기  
@@ -373,14 +373,16 @@
   <div markdown="1">
 
   결제 수단 선택  
-  <img src="sql/배송/배송조회.png" alt="결제 수단 선택" width="500" align="center" />
+  <img src="sql/결제/결제 수단 선택.webp" alt="결제 수단 선택" width="500" align="center" />
 
   <br>
 
   카드 등록  
-  <img src="sql/배송/배송조회.png" alt="카드 등록" width="500" align="center" />
+  <img src="sql/결제/카드 등록.webp" alt="카드 등록" width="500" align="center" />
 
   <br>
+
+  
 
   </div>
 </details>
