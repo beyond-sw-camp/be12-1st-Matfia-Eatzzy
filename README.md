@@ -216,7 +216,7 @@
   <br>
 
   고객이 좋아요 한 식당 조회  
-  <img src="sql/식당/고객이 좋아요 한 식당 조회.webp" alt="고객이 좋아요 한 식당 조회" width="500" align="center" />
+  <img src="sql/식당/내가 좋아요한 식당 조회.png" alt="고객이 좋아요 한 식당 조회" width="500" align="center" />
 
   <br>
   
@@ -274,13 +274,13 @@
   <br>
 
   상품 리뷰 등록  
-  <img src="sql/상품/상품리뷰등록.png" alt="상품 리뷰 등록" width="500" align="center" />
+  <img src="sql/상품/상품 리뷰 등록.png" alt="상품 리뷰 등록" width="500" align="center" />
 
   <br>
 
   상품 리뷰 수정  
-  <img src="sql/상품/상품리뷰수정.png" alt="상품 리뷰 수정1 " width="500" align="center" />
-  <img src="sql/상품/상품리뷰수정2.png" alt="상품 리뷰 수정2" width="500" align="center" />
+  <img src="sql/상품/상품리뷰수정.png" alt="상품 리뷰 수정 " width="500" align="center" />
+  
 
   <br>
 
