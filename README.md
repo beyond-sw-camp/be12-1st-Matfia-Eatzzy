@@ -152,12 +152,14 @@
 
 ## 🥨 SQL
 
-#### DDL
+#### ✅ DDL
 [DDL SQL 파일](/sql/DDL.sql)
 
 
-#### DML
+#### ✅ DML
 [DDL SQL 파일]()
+
+<br>
 
 <details>
   <summary><b>사용자</b></summary>
@@ -178,42 +180,42 @@
   <summary><b>식당</b></summary>
   <div markdown="1">
 
-  - 식당 전체 조회 (좋아요순 정렬)
+  식당 전체 조회 (좋아요순 정렬)  
   <img src="sql/식당/식당 전체 조회_좋아요순 정렬.png" alt="식당 전체체 조회" width="500" align="center" />
 
   <br>
 
-  - 식당 상세 조회
+  식당 상세 조회  
   <img src="sql/식당/식당 상세 조회.webp" alt="식당 상세 조회" width="500" align="center" />
 
   <br>
 
-  - 식당 검색
+  식당 검색  
   <img src="sql/식당/검색어 조회.png" alt="식당검색" width="500" align="center" />
 
   <br>
     
-  - 카테고리 기준 필터링  
+  카테고리 기준 필터링  
   <img src="sql/식당/식당 카테고리 기준 필터링.png" alt="식당 카테고리 필터링" width="500" align="center" />
 
   <br>
   
-  - 지역 기준 필터링  
+  지역 기준 필터링  
   <img src="sql/식당/식당 지역 기준 필터링.png" alt="식당 지역 필터링" width="500" align="center" />
 
   <br>
 
-  - 고객이 좋아요 한 식당 조회  
+  고객이 좋아요 한 식당 조회  
   <img src="sql/식당/고객이 좋아요 한 식당 조회.webp" alt="고객이 좋아요 한 식당 조회" width="500" align="center" />
 
   <br>
   
-  - 점주 식당 등록  
+  점주 식당 등록  
   <img src="sql/식당/점주 식당 등록.png" alt="점주 식당 등록" width="500" align="center" />
 
   <br>
 
-  - 점주 식당 예약 조회  
+  점주 식당 예약 조회  
   <img src="sql/식당/점주 식당예약 조회.png" alt="점주 식당 예약 조회회" width="500" align="center" />
 
   <br>
@@ -223,17 +225,17 @@
 
   <br>
 
-  - 식당 등록 요청 거절
+  식당 등록 요청 거절  
   <img src="sql/식당/식당등록거절.png" alt="식당 등록 요청 거절" width="500" align="center" />
 
   <br>
 
-  - 식당 등록 요청 수락
+  식당 등록 요청 수락  
   <img src="sql/식당/식당등록수락.png" alt="식당 등록 요청 수락락" width="500" align="center" />
 
   <br>
 
-  - 식당 카테고리 등록
+  식당 카테고리 등록  
   <img src="sql/식당/식당카테고리등록.png" alt="식당 카테고리 등록록" width="500" align="center" />
 
   <br>
@@ -246,43 +248,43 @@
   <summary><b>상품</b></summary>
   <div markdown="1">
 
-  - 전체 상품 조회
+  전체 상품 조회  
   <img src="sql/상품/상품리뷰확인.png" alt="전체 상품 조회" width="500" align="center" />
 
   <br>
 
-  - 상품 상세 조회
+  상품 상세 조회  
   <img src="sql/상품/상품리뷰확인.png" alt="상품 상세 조회" width="500" align="center" />
 
   <br>
 
-  - 상품 리뷰 확인
+  상품 리뷰 확인  
   <img src="sql/상품/상품리뷰확인.png" alt="상품 리뷰 확인인" width="500" align="center" />
 
   <br>
 
-  - 상품 리뷰 등록
+  상품 리뷰 등록  
   <img src="sql/상품/상품리뷰등록.png" alt="상품 리뷰 등록" width="500" align="center" />
 
   <br>
 
-  - 상품 리뷰 수정
+  상품 리뷰 수정  
   <img src="sql/상품/상품리뷰수정.png" alt="상품 리뷰 수정1 " width="500" align="center" />
   <img src="sql/상품/상품리뷰수정2.png" alt="상품 리뷰 수정2" width="500" align="center" />
 
   <br>
 
-  - 상품 리뷰 삭제
+  상품 리뷰 삭제  
   <img src="sql/상품/상품리뷰삭제.png" alt="상품 리뷰 삭제" width="500" align="center" />
 
   <br>
 
-  - 상품 바로 구매
+  상품 바로 구매  
   <img src="sql/상품/상품바로구매.png" alt="상품 바로 구매" width="500" align="center" />
 
   <br>
 
-  - 상품 카테고리 등록
+  상품 카테고리 등록  
   <img src="sql/상품/상품 카테고리 등록.png" alt="상품 카테고리 등록" width="500" align="center" />
 
   <br>
@@ -296,17 +298,17 @@
   <summary><b>장바구니<b></summary>
   <div markdown="1">
 
-  - 장바구니 담기
+  장바구니 담기  
   <img src="sql/상품/장바구니 담기.png" alt="장바구니 담기" width="500" align="center" />
   
   <br>
 
-  - 장바구니 조회
+  장바구니 조회  
   <img src="sql/상품/장바구니 조회.png" alt="장바구니 조회" width="500" align="center" />
 
   <br>
 
-  -장바구니 물품 주문
+  장바구니 물품 주문  
   <img src="sql/상품/장바구니물품주문.png" alt="장바구니 물품 주문" width="500" align="center" />
   
   <br>
@@ -319,17 +321,17 @@
 <details>
   <summary><b>주문</b></summary>
 
-  - 전체 주문 내역 조회
+  전체 주문 내역 조회  
   <img src="sql/주문/전체 주문 내역 조회.png" alt="전체 주문 내역 조회" width="500" align="center" />
 
   <br>
 
-  - 주문 상세 내역 조회
+  주문 상세 내역 조회  
   <img src="sql/주문/주문 상세 내역 조회.png" alt="주문 상세 내역 조회" width="500" align="center" />
 
   <br>
   
-  - 주문 현황 확인
+  주문 현황 확인  
   <img src="sql/주문/주문현황확인.png" alt="주문 현황 확인" width="500" align="center" />
   
   <br>
@@ -342,12 +344,12 @@
   <summary><b>배송</b></summary>
   <div markdown="1">
 
-  - 배송 등록
+  배송 등록  
   <img src="sql/배송/배송등록.png" alt="배송 등록" width="500" align="center" />
 
   <br>
 
-  - 배송 조회
+  배송 조회  
   <img src="sql/배송/배송조회.png" alt="배송 조회" width="500" align="center" />
 
   <br>
@@ -360,11 +362,16 @@
   <summary><b>결제</b></summary>
   <div markdown="1">
 
-  - 결제 수단 선택 
+  결제 수단 선택  
+  <img src="sql/배송/배송조회.png" alt="결제 수단 선택" width="500" align="center" />
 
   <br>
 
-  - 카드 등록
+  카드 등록  
+  <img src="sql/배송/배송조회.png" alt="카드 등록" width="500" align="center" />
+
+  <br>
+
   </div>
 </details>
 
