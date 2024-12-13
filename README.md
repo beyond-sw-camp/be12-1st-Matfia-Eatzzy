@@ -166,16 +166,17 @@
   <div markdown="1">
   <br>
 
-  회원가입
+  회원가입  
 
-  로그인 성공
+  로그인 성공  
   <img src="sql/사용자/로그인 성공.png" alt="로그인 성공" 
   width="500" align="center" />
+  
+  <br>
 
   로그인 실패  
   <img src="sql/사용자/로그인 실패.png" alt="로그인 실패" width="500" align="center" />
 
-  <br>
   <br>
   
   <br>
