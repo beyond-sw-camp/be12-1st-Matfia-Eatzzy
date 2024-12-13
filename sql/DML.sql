@@ -376,12 +376,7 @@ INSERT INTO carts (user_id)
 VALUES (1)
 ON DUPLICATE KEY UPDATE idx = LAST_INSERT_ID(idx);
 
--- Step 2: 재고 확인
-SELECT stock 
-FROM products 
-WHERE idx = 101;
-
--- Step 3: 상품 추가 또는 수량 업데이트
+-- Step 2: 상품 추가 또는 수량 업데이트
 INSERT INTO cart_products (cart_id, product_id, quantity)
 VALUES (LAST_INSERT_ID(), 101, 2)
 ON DUPLICATE KEY UPDATE
@@ -391,24 +386,13 @@ quantity = quantity + 2;
   DELETE FROM cart_products
 WHERE cart_id = 1 AND product_id = 101;
 
-4.  장바구니 수량 수정 + 수량 수정 확인 
+4.  장바구니 수량 수정  
 UPDATE cart_products cp
 JOIN carts c ON c.idx = cp.cart_id
 SET cp.quantity = cp.quantity + 2
 WHERE c.user_id = 1 AND cp.product_id = 101;
 
-SELECT cp.cart_id, cp.product_id, cp.quantity
-	FROM cart_products cp
-	JOIN carts c ON c.idx = cp.cart_id
-	WHERE c.user_id = 1 AND cp.product_id = 101;
-
 5. 상품 리뷰 등록
-  SELECT idx FROM products WHERE idx = 101;
-	SELECT idx FROM users WHERE idx = 1;
-    
-    select * from product_reviews
-    where product_reviews.user_id = 1 AND product_reviews.product_id = 101;
-    
     INSERT INTO product_reviews (star_point,content, createdAt, product_id, user_id)
 VALUES (3,'Great product! Fast delivery.', NOW(), 101, 1);
 
@@ -433,35 +417,13 @@ LEFT JOIN product_review_images ON product_reviews.idx = product_review_images.p
 WHERE product_reviews.product_id = 101; 
 
 8. 상품 리뷰 수정
-  SELECT * FROM users where idx = 1;
-
-SELECT product_reviews.idx AS review_id,
-       product_reviews.content,
-       product_reviews.product_id,
-       product_reviews.createdAt
-FROM users
-JOIN product_reviews ON users.idx = product_reviews.user_id
-JOIN products ON products.idx = product_reviews.product_id
-WHERE users.idx = 10266;
-
 UPDATE product_reviews
 SET content = 'Updated review content',
     star_point = 4
 WHERE idx = 1 -- 리뷰 ID
   AND user_id = 10266; -- 사용자 ID 확인
 
-SELECT idx, user_id, content, star_point
-FROM product_reviews
-WHERE idx = 1
-  AND user_id = 10266;
-
 9 상품 리뷰 삭제
-*/사용자가 작성한 상품 리뷰 확인
-SELECT idx, user_id, content, star_point
-FROM product_reviews
-WHERE idx = 1
-  AND user_id = 10266;
- 
   DELETE FROM product_reviews
 	WHERE idx = 1; 
 
@@ -492,35 +454,9 @@ WHERE users.idx = 893 ;
 3. 장바구니 물품 주문
 -- Step 1: 주문 생성
 INSERT INTO orders (quantity, price, message, user_id)
-SELECT 
-    SUM(cp.quantity) AS total_quantity,
-    SUM(cp.quantity * p.price) AS total_price,
-    'Order from cart', -- 기본 메시지
-    1 -- 사용자 ID
-FROM cart_products cp
-JOIN products p ON cp.product_id = p.idx
-WHERE cp.idx = 1;
-
-SELECT * 
-FROM orders
-WHERE user_id = 1
-ORDER BY idx DESC
-LIMIT 1; -- 가장 최근 주문 확인
 
 -- Step 2: 주문 상세 생성
 INSERT INTO order_products (quantity, product_id, order_id)
-SELECT 
-    cp.quantity, 
-    cp.product_id,
-    LAST_INSERT_ID()
-FROM cart_products cp
-WHERE cp.idx = 1;
-
-SELECT op.*
-FROM order_products op
-JOIN orders o ON op.order_id = o.idx
-WHERE o.user_id = 1
-ORDER BY op.idx DESC;
 
 -- Step 3: 재고 업데이트
 UPDATE products p
@@ -528,55 +464,29 @@ JOIN cart_products cp ON p.idx = cp.product_id
 SET p.stock = p.stock - cp.quantity
 WHERE cp.idx = 1;
 
-select stock from products where idx = 2304;
-
 -- Step 4: 장바구니 비우기
 DELETE FROM cart_products
 WHERE idx = 1;
 
-select * from cart_products where idx = 1;
-
 4. 상품 바로 구매
--- Step 1: 상품 정보 확인
-SELECT idx, stock, price
-FROM products
-WHERE idx = 101 FOR UPDATE;
-
--- Step 2: 주문 생성
+-- Step 1: 주문 생성
 INSERT INTO orders (quantity, price, message, user_id)
 VALUES (1, 4300, 'Can not wait', 2);
 
-
-select * from orders 
-where orders.user_id = 1 and message = 'Quick purchase';
-
--- Step 3: 주문 상세 생성
+-- Step 2: 주문 상세 생성
 INSERT INTO order_products (quantity, product_id, order_id)
 VALUES (2, 101, 9983);
 
-select * from order_products
-JOIN orders ON orders.idx = order_products.order_id
-JOIN products ON products.idx = order_products.product_id
-WHERE order_products.product_id = 101 AND order_products.order_id
-;
-
--- Step 4: 재고 감소
+-- Step 3: 재고 감소
 UPDATE products
 SET stock = stock - 2
 WHERE idx = 101;
-
-select stock FROM products
-where idx = 101;
 
 5. 주문 취소
   # 주문 상태 컬럼 추가 필요 
   UPDATE orders
 SET status = 'Pending'
 WHERE idx = 9983 AND user_id = 1;
-
-select status from orders
-JOIN users ON orders.user_id = users.idx
-where users.idx = 1 and orders.idx = 9983;
 
 ## 결제
 1. 결제 수단 선택
@@ -598,11 +508,6 @@ SET status = 'Success'
 WHERE idx = LAST_INSERT_ID();
 
 2. 카드 등록
-  # 카드 등록 등록 확인 쿼리 
-  select payment_method.name, users.idx from users
-  JOIN payment_method ON payment_method.user_id = users.idx
-  where users.idx = 1;
-  
   INSERT INTO payment_method (name, user_id)
 VALUES
 ('Visa Credit Card', 1); 
@@ -611,17 +516,6 @@ VALUES
  INSERT INTO payments (order_id, status, price, payment_method_id)
 VALUES
 (101, 'Success', 50000, 1);
-
-select * from payments
-JOIN orders ON orders.idx = payments.payment_method_id
-where payment_method_id = 1
-;
-
-select * from payment_method
-where idx = 1;
-
-
-
 #------------------------------------------------------------------------------------------------
 # 관리자 전용 
 #------------------------------------------------------------------------------------------------
