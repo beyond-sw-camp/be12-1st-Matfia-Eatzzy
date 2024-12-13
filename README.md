@@ -157,7 +157,7 @@
 
 
 #### ✅ DML
-[DDL SQL 파일]()
+[DML SQL 파일](/sql/DML.sql)
 
 <br>
 
@@ -166,9 +166,18 @@
   <div markdown="1">
   <br>
 
-  - 회원가입
+  회원가입  
 
-  - 로그인
+  로그인 성공  
+  <img src="sql/사용자/로그인 성공.png" alt="로그인 성공" 
+  width="500" align="center" />
+  
+  <br>
+
+  로그인 실패  
+  <img src="sql/사용자/로그인 실패.png" alt="로그인 실패" width="500" align="center" />
+
+  <br>
   
   <br>
   </div>
@@ -181,7 +190,7 @@
   <div markdown="1">
 
   식당 전체 조회 (좋아요순 정렬)  
-  <img src="sql/식당/식당 전체 조회_좋아요순 정렬.png" alt="식당 전체체 조회" width="500" align="center" />
+  <img src="sql/식당/식당 전체 조회_좋아요순 정렬.png" alt="식당 전체 조회" width="500" align="center" />
 
   <br>
 
