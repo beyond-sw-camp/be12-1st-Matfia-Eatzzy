@@ -373,12 +373,12 @@
   <div markdown="1">
 
   결제 수단 선택  
-  <img src="sql/결제/결제 수단 선택.webppng" alt="결제 수단 선택" width="500" align="center" />
+  <img src="sql/결제/결제 수단 선택.webp" alt="결제 수단 선택" width="500" align="center" />
 
   <br>
 
   카드 등록  
-  <img src="sql/결제/카드등록.webp" alt="카드 등록" width="500" align="center" />
+  <img src="sql/결제/카드 등록.webp" alt="카드 등록" width="500" align="center" />
 
   <br>
 
